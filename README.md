@@ -9,5 +9,5 @@ This is an application that allows users to search for places to go have fun, ta
 ## Contributors
 So far there are no contributors for this project.
 
-## Behaviour Driven Development
+## Behaviour Driven Development(BDD)
 
