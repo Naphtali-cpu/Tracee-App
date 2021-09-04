@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "716693911565",
+    "project_id": "tracee-2",
+    "storage_bucket": "tracee-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716693911565:android:54dfd48a73051df698bd44",
+        "android_client_info": {
+          "package_name": "com.example.tracee2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716693911565-pvroc5uk50vtk2ktc7n4douks8r219t5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_RJ74GhSHU7Sgh4QN2ofRggPEqyJ3bQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716693911565-pvroc5uk50vtk2ktc7n4douks8r219t5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
