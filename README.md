@@ -9,6 +9,10 @@ This is an application that allows users to search for places to go have fun, ta
 ## Contributors
 So far there are no contributors for this project.
 
+## Setup and installation
+* Ensure you have Android Studio installed on your pc.
+
+
 ## Behaviour Driven Development(BDD)
 * The android application page loads in form of a splash.
 * User is required to login or register an account.
