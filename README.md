@@ -10,4 +10,6 @@ This is an application that allows users to search for places to go have fun, ta
 So far there are no contributors for this project.
 
 ## Behaviour Driven Development(BDD)
+* The android application page loads in form of a splash.
+* User is required to login or register an account.
 
