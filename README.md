@@ -22,4 +22,7 @@ So far there are no contributors for this project.
 * User is required to login or register an account.
 * After user logs in, user inputs location to look for trails.
 
+## Technologies Used
+* Java
+
 
