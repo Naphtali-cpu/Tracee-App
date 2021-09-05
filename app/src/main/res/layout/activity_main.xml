@@ -10,6 +10,7 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
         android:src="@drawable/map" />
 
     <TextView
@@ -21,11 +22,25 @@
         android:layout_marginStart="110dp"
         android:layout_marginTop="110dp"
         android:layout_marginEnd="110dp"
-        android:layout_marginBottom="110dp"
-        android:fontFamily="@font/nunito_semibold"
+        android:layout_marginBottom="200dp"
+        android:fontFamily="@font/abril_fatface"
         android:text="Tracee "
         android:textColor="@color/black"
-        android:textSize="45dp"
+        android:textSize="58dp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="192dp"
+        android:fontFamily="@font/gruppo"
+        android:text="Your favourite tracker app! "
+        android:textColor="@color/black"
+        android:textSize="15dp" />
 
 </RelativeLayout>
