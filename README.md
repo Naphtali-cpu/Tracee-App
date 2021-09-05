@@ -12,4 +12,6 @@ So far there are no contributors for this project.
 ## Behaviour Driven Development(BDD)
 * The android application page loads in form of a splash.
 * User is required to login or register an account.
+* After user logs in, user inputs location to look for trails.
+
 
