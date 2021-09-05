@@ -11,7 +11,8 @@ So far there are no contributors for this project.
 
 ## Setup and installation
 * Ensure you have Android Studio installed on your pc.
-
+* Head to your terminal.
+* Used git clone https://github.com/Naphtali-cpu/Tracee-App.git clone the project.
 
 ## Behaviour Driven Development(BDD)
 * The android application page loads in form of a splash.
