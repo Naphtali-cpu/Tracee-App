@@ -25,4 +25,12 @@ So far there are no contributors for this project.
 ## Technologies Used
 * Java
 
+## Contact Information
+* Email- naphtali919@gmail.com
+* Mobile Number- +254727991993
+* Instagram @ _naphtalimakori
+* Facebook @ Naphtali McOrri
+* Linked In @ Naphtali Makori
+
+
 
