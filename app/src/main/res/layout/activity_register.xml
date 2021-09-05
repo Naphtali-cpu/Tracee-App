@@ -40,6 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Email"
+                android:textSize="19sp"
                 android:fontFamily="@font/nunito_semibold"
                 android:background="@drawable/search_layout"
                 android:inputType="textEmailAddress"/>
@@ -54,6 +55,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password"
+                android:textSize="19sp"
                 android:fontFamily="@font/nunito_semibold"
                 android:background="@drawable/search_layout"
                 android:inputType="textPassword"/>
