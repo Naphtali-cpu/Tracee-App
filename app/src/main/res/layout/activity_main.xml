@@ -22,8 +22,8 @@
         android:layout_marginTop="110dp"
         android:layout_marginEnd="110dp"
         android:layout_marginBottom="110dp"
-        android:fontFamily="@font/bangers"
-        android:text="Tracee App "
+        android:fontFamily="@font/nunito_semibold"
+        android:text="Tracee "
         android:textColor="@color/black"
         android:textSize="45dp"
         android:textStyle="bold" />
