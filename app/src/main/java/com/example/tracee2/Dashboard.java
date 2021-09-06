@@ -1,12 +1,12 @@
 package com.example.tracee2;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,7 +24,6 @@ public class Dashboard extends AppCompatActivity {
     FirebaseAuth mAuth;
     @BindView(R.id.findRestaurantsButton) Button mFindRestaurantsButton;
     @BindView(R.id.locationEditText) EditText mLocationEditText;
-
     public static final String TAG = MainActivity.class.getSimpleName();
 
     @Override
@@ -32,6 +31,8 @@ public class Dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
         ButterKnife.bind(this);
+
+
         mFindRestaurantsButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -45,22 +46,22 @@ public class Dashboard extends AppCompatActivity {
         });
 //        Making the recyclerview
 
-        RecyclerView recyclerView = findViewById(R.id.recyclerView);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-        MyMovieData[] myMovieData = new MyMovieData[]{
-                new MyMovieData("Camping","Go camping with friends!",R.drawable.camping),
-                new MyMovieData("Hiking","Look for places to hike",R.drawable.hiking),
-                new MyMovieData("Travel","Travel with your family!",R.drawable.travel),
-                new MyMovieData("Trail Walks","Look for best places for Trails",R.drawable.trail),
-                new MyMovieData("Wild Tour","Visit animals parks",R.drawable.wildtour),
-                new MyMovieData("Cycling Segments","2003 film",R.drawable.cycling),
-                new MyMovieData("Swimming","Have fun with your friends and family",R.drawable.swimming),
-        };
-
-        MyMovieAdapter myMovieAdapter = new MyMovieAdapter(myMovieData,Dashboard.this);
-        recyclerView.setAdapter(myMovieAdapter);
+//        RecyclerView recyclerView = findViewById(R.id.recyclerView);
+//        recyclerView.setHasFixedSize(true);
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+//
+//        MyMovieData[] myMovieData = new MyMovieData[]{
+//                new MyMovieData("Camping","Go camping with friends!",R.drawable.camping),
+//                new MyMovieData("Hiking","Look for places to hike",R.drawable.hiking),
+//                new MyMovieData("Travel","Travel with your family!",R.drawable.travel),
+//                new MyMovieData("Trail Walks","Look for best places for Trails",R.drawable.trail),
+//                new MyMovieData("Wild Tour","Visit animals parks",R.drawable.wildtour),
+//                new MyMovieData("Cycling Segments","2003 film",R.drawable.cycling),
+//                new MyMovieData("Swimming","Have fun with your friends and family",R.drawable.swimming),
+//        };
+//
+//        MyMovieAdapter myMovieAdapter = new MyMovieAdapter(myMovieData,Dashboard.this);
+//        recyclerView.setAdapter(myMovieAdapter);
 
 //        Logout user
 
