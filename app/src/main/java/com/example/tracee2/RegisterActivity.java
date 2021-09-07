@@ -37,7 +37,7 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View v) {
                 NotificationCompat.Builder mBuilder =  new NotificationCompat.Builder(RegisterActivity.this)
                         .setSmallIcon(R.drawable.map)
-                        .setContentTitle("Tracee Send New Message")
+                        .setContentTitle("Tracee ")
                         .setContentText("Hello, welcome to Tracee app! Your favourite tracker app. ");
                 // Set the intent to fire when the user taps on notification.
                 Intent resultIntent = new Intent(RegisterActivity.this, Dashboard.class);
