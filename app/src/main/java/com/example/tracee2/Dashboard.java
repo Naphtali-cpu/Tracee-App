@@ -24,6 +24,7 @@ public class Dashboard extends AppCompatActivity {
     FirebaseAuth mAuth;
     @BindView(R.id.findRestaurantsButton) Button mFindRestaurantsButton;
     @BindView(R.id.locationEditText) EditText mLocationEditText;
+
     public static final String TAG = MainActivity.class.getSimpleName();
 
     @Override
