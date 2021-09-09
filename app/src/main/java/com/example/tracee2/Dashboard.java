@@ -1,16 +1,20 @@
 package com.example.tracee2;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -21,6 +25,7 @@ import butterknife.ButterKnife;
 public class Dashboard extends AppCompatActivity {
 
     Button btnLogOut;
+    Button mbottomNavigationView;
     FirebaseAuth mAuth;
     @BindView(R.id.findRestaurantsButton) Button mFindRestaurantsButton;
     @BindView(R.id.locationEditText) EditText mLocationEditText;
@@ -45,6 +50,8 @@ public class Dashboard extends AppCompatActivity {
 
             }
         });
+
+
 //        Making the recyclerview
 
 //        RecyclerView recyclerView = findViewById(R.id.recyclerView);
@@ -72,6 +79,7 @@ public class Dashboard extends AppCompatActivity {
             mAuth.signOut();
             startActivity(new Intent(Dashboard.this, LoginActivity.class));
         });
+
     }
 
     @Override
