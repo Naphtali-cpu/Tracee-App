@@ -5,7 +5,11 @@
       <map>
         <entry key="app/src/main/res/drawable/add.xml" value="0.19166666666666668" />
         <entry key="app/src/main/res/drawable/search_layout.xml" value="0.32592592592592595" />
+<<<<<<< HEAD
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.18170878459687123" />
+=======
         <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.25692963752665243" />
+>>>>>>> 36b9ae95aebb8730e3309edc186e578c8c58c287
         <entry key="app/src/main/res/layout/activity_location.xml" value="0.1556508577194753" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
