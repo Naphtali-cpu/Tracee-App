@@ -53,7 +53,7 @@ public class LoginActivity extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
-                        Toast.makeText(LoginActivity.this, "User logged in successfully", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Welcome! ", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(LoginActivity.this, Dashboard.class));
                     }else{
                         Toast.makeText(LoginActivity.this, "Log in Error: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
