@@ -9,6 +9,9 @@ This is an application that allows users to search for places to go have fun, ta
 ## Contributors
 So far there are no contributors for this project.
 
+## Bugs
+* API only fetchs data around USA.
+
 ## Setup and installation
 * Ensure you have Android Studio installed on your pc.
 * Head to your terminal.
