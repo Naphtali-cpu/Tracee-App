@@ -1,4 +1,4 @@
-package com.example.tracee2;
+package com.example.tracee2.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.tracee2.R;
 
 public class MainActivity extends AppCompatActivity {
 
