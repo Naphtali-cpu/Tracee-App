@@ -20,32 +20,32 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_margin="16dp"
-        android:visibility="gone" />
+        android:visibility="gone"/>
 
     <TextView
+        android:id="@+id/locationTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Trails near "
-        android:id="@+id/locationTextView"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="#555555"
-        tools:ignore="MissingConstraints"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="30dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/nunito_bold"
+        android:text="Trails near "
+        android:textColor="#555555"
         android:textSize="24sp"
         android:visibility="gone"
-        />
-    <ListView
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/listView"
-        android:layout_below="@+id/locationTextView"
+        android:layout_below="@id/locationTextView"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:visibility="gone"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginTop="86dp"
+        android:visibility="gone" />
 
 </RelativeLayout>
