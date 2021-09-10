@@ -3,16 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/add.xml" value="0.19166666666666668" />
         <entry key="app/src/main/res/drawable/search_layout.xml" value="0.32592592592592595" />
-        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.67" />
+<<<<<<< HEAD
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.18170878459687123" />
+=======
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.25692963752665243" />
+>>>>>>> 36b9ae95aebb8730e3309edc186e578c8c58c287
         <entry key="app/src/main/res/layout/activity_location.xml" value="0.1556508577194753" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.18115942028985507" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_register.xml" value="0.18115942028985507" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.5" />
         <entry key="app/src/main/res/layout/custom_grid_layout.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.33" />
         <entry key="app/src/main/res/layout/location_list_item.xml" value="0.15443840579710144" />
-        <entry key="app/src/main/res/layout/movie_item_list.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/movie_item_list.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.32447916666666665" />
       </map>
     </option>
   </component>
