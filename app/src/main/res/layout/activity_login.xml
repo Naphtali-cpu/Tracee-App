@@ -7,7 +7,7 @@
     android:padding="24dp"
     android:background="#d8e2dc"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".ui.LoginActivity">
 
     <ImageView
         android:id="@+id/imageView"

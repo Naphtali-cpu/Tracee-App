@@ -4,6 +4,10 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import android.content.Intent;
 import android.widget.TextView;
+
+import com.example.tracee2.ui.Dashboard;
+import com.example.tracee2.ui.LocationActivity;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

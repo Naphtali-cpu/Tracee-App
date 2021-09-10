@@ -1,21 +1,16 @@
-package com.example.tracee2;
+package com.example.tracee2.ui;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 
+import com.example.tracee2.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -27,15 +22,15 @@ public class Dashboard extends AppCompatActivity {
     Button btnLogOut;
     Button mbottomNavigationView;
     FirebaseAuth mAuth;
-    @BindView(R.id.findRestaurantsButton) Button mFindRestaurantsButton;
-    @BindView(R.id.locationEditText) EditText mLocationEditText;
+    @BindView(com.example.tracee2.R.id.findRestaurantsButton) Button mFindRestaurantsButton;
+    @BindView(com.example.tracee2.R.id.locationEditText) EditText mLocationEditText;
 
     public static final String TAG = MainActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard);
+        setContentView(com.example.tracee2.R.layout.activity_dashboard);
         ButterKnife.bind(this);
 
 
