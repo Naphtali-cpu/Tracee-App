@@ -135,6 +135,12 @@
                             android:textColor="#fff"
                             android:textSize="22sp"
                             android:textStyle="bold" />
+                        <Button
+                            android:layout_width="110dp"
+                            android:id="@+id/hiking"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="50dp"
+                            android:text="View"/>
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
@@ -161,18 +167,24 @@
                             android:orientation="vertical">
 
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="15.4dp"
-                                android:layout_marginLeft="15.4dp"
-                                android:layout_marginTop="200dp"
-                                android:lineSpacingExtra="2.8sp"
-                                android:text="Cycling"
-                                android:textColor="#fff"
-                                android:textSize="22sp"
-                                android:textStyle="bold" />
                         </LinearLayout>
+                        <Button
+                            android:layout_width="110dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="50dp"
+                            android:text="View"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15.4dp"
+                            android:layout_marginLeft="15.4dp"
+                            android:layout_marginTop="200dp"
+                            android:lineSpacingExtra="2.8sp"
+                            android:text="Cycling"
+                            android:textColor="#fff"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
@@ -212,6 +224,13 @@
                                 android:textStyle="bold" />
                         </LinearLayout>
 
+                        <Button
+                            android:layout_width="110dp"
+                            android:id="@+id/cycling"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="50dp"
+                            android:text="View"/>
+
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
@@ -249,6 +268,13 @@
                                 android:textSize="22sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
+
+                        <Button
+                            android:layout_width="110dp"
+                            android:id="@+id/swimming"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="50dp"
+                            android:text="View"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -290,6 +316,13 @@
 
                         </LinearLayout>
 
+                        <Button
+                            android:layout_width="110dp"
+                            android:id="@+id/travel"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="50dp"
+                            android:text="View"/>
+
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
@@ -328,6 +361,13 @@
                                 android:textStyle="bold" />
 
                         </LinearLayout>
+
+                        <Button
+                            android:layout_width="110dp"
+                            android:id="@+id/wildtour"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="50dp"
+                            android:text="View"/>
 
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
