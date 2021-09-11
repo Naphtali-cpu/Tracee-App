@@ -4,12 +4,13 @@ package com.example.tracee2.models;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.io.Serializable;
 import java.util.List;
 
 import javax.annotation.Generated;
 
 @Generated("jsonschema2pojo")
-public class YelpBusinessesSearchResponse {
+public class YelpBusinessesSearchResponse implements Serializable {
 
     @SerializedName("total")
     @Expose

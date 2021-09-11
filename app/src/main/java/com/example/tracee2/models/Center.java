@@ -4,10 +4,12 @@ package com.example.tracee2.models;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.io.Serializable;
+
 import javax.annotation.Generated;
 
 @Generated("jsonschema2pojo")
-public class Center {
+public class Center implements Serializable {
 
     @SerializedName("latitude")
     @Expose
