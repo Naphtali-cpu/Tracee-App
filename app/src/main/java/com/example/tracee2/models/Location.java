@@ -1,13 +1,17 @@
 
 package com.example.tracee2.models;
 
+import androidx.annotation.NonNull;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+
+import java.io.Serializable;
 
 import javax.annotation.Generated;
 
 @Generated("jsonschema2pojo")
-public class Location {
+public class Location implements Serializable {
 
     @SerializedName("city")
     @Expose
@@ -113,6 +117,12 @@ public class Location {
 
     public void setZipCode(String zipCode) {
         this.zipCode = zipCode;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return String.format("%s, %s, %s %s", this.address1, this.city, this.state, this.zipCode);
     }
 
 }
