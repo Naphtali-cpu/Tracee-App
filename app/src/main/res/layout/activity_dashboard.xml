@@ -506,7 +506,7 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/nunito_bold"
-                android:text="News "
+                android:text="Posts "
                 android:textColor="#555555"
                 android:textSize="24sp" />
             <androidx.cardview.widget.CardView
