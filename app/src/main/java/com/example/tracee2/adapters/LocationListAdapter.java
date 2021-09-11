@@ -22,24 +22,24 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class RestaurantListAdapter extends RecyclerView.Adapter<RestaurantListAdapter.RestaurantViewHolder> {
+public class LocationListAdapter extends RecyclerView.Adapter<LocationListAdapter.RestaurantViewHolder> {
     private List<Business> mRestaurants;
     private Context mContext;
 
-    public RestaurantListAdapter(Context context, List<Business> restaurants) {
+    public LocationListAdapter(Context context, List<Business> restaurants) {
         mContext = context;
         mRestaurants = restaurants;
     }
 
     @Override
-    public RestaurantListAdapter.RestaurantViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public LocationListAdapter.RestaurantViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.restaurant_list_item, parent, false);
         RestaurantViewHolder viewHolder = new RestaurantViewHolder(view);
         return viewHolder;
     }
 
     @Override
-    public void onBindViewHolder(RestaurantListAdapter.RestaurantViewHolder holder, int position) {
+    public void onBindViewHolder(LocationListAdapter.RestaurantViewHolder holder, int position) {
         holder.bindRestaurant(mRestaurants.get(position));
     }
 
