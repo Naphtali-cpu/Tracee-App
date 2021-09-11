@@ -29,7 +29,7 @@ If you wish to, contact me :)
 
 ## Technologies Used
 * Java
-* Android
+
 
 ## Contact Information
 * Email- naphtali919@gmail.com
