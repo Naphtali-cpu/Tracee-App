@@ -16,7 +16,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 import com.example.tracee2.R;
-import com.example.tracee2.adapters.RestaurantListAdapter;
+import com.example.tracee2.adapters.LocationListAdapter;
 import com.example.tracee2.models.Business;
 import com.example.tracee2.models.YelpBusinessesSearchResponse;
 import com.example.tracee2.network.YelpApi;
@@ -31,7 +31,7 @@ public class LocationActivity extends AppCompatActivity {
     @BindView(R.id.errorTextView) TextView mErrorTextView;
     @BindView(R.id.progressBar) ProgressBar mProgressBar;
 
-    private RestaurantListAdapter mAdapter;
+    private LocationListAdapter mAdapter;
 
     public List<Business> restaurants;
 
@@ -55,7 +55,7 @@ public class LocationActivity extends AppCompatActivity {
 
                 if (response.isSuccessful()) {
                     restaurants = response.body().getBusinesses();
-                    mAdapter = new RestaurantListAdapter(LocationActivity.this, restaurants);
+                    mAdapter = new LocationListAdapter(LocationActivity.this, restaurants);
                     mRecyclerView.setAdapter(mAdapter);
                     RecyclerView.LayoutManager layoutManager =
                             new LinearLayoutManager(LocationActivity.this);
