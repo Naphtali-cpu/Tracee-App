@@ -7,6 +7,8 @@ Naphtali Makori
 This is an application that allows users to search for places to go have fun, take a walk or anything that satisfies them since it is hard to find places or trails to go to and be satisfied.
 
 ## Demo
+This a demo of the Application!  
+
 ![screenshot](splash.jpg)
 ![screenshot](register.jpg)
 ![screenshot](login.jpg)
