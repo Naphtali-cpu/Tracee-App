@@ -1,15 +1,14 @@
 package com.example.tracee2.ui;
 
 import android.os.Bundle;
-
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.example.tracee2.R;
 import com.example.tracee2.models.Business;
@@ -25,14 +24,14 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class LocationDetailFragment extends Fragment {
-    @BindView(R.id.restaurantImageView) ImageView mImageLabel;
-    @BindView(R.id.restaurantNameTextView) TextView mNameLabel;
+    @BindView(R.id.locationImageView) ImageView mImageLabel;
+    @BindView(R.id.locationNameTextView) TextView mNameLabel;
     @BindView(R.id.cuisineTextView) TextView mCategoriesLabel;
     @BindView(R.id.ratingTextView) TextView mRatingLabel;
     @BindView(R.id.websiteTextView) TextView mWebsiteLabel;
     @BindView(R.id.phoneTextView) TextView mPhoneLabel;
     @BindView(R.id.addressTextView) TextView mAddressLabel;
-    @BindView(R.id.saveRestaurantButton) TextView mSaveRestaurantButton;
+    @BindView(R.id.savelocationButton) TextView mSaveLocationButton;
 
 
     private Business mLocation;
@@ -43,18 +42,18 @@ public class LocationDetailFragment extends Fragment {
 
 
     public static LocationDetailFragment newInstance(Business location) {
-        LocationDetailFragment restaurantDetailFragment = new LocationDetailFragment();
+        LocationDetailFragment locationDetailFragment = new LocationDetailFragment();
         Bundle args = new Bundle();
-        args.putParcelable("trails", Parcels.wrap(location));
-        restaurantDetailFragment.setArguments(args);
-        return restaurantDetailFragment;
+        args.putParcelable("location", Parcels.wrap(location));
+        locationDetailFragment.setArguments(args);
+        return locationDetailFragment;
     }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         assert getArguments() != null;
-        mLocation = Parcels.unwrap(getArguments().getParcelable("trails"));
+        mLocation = Parcels.unwrap(getArguments().getParcelable("location"));
     }
 
     @Override

@@ -25,6 +25,7 @@ public class Dashboard extends AppCompatActivity {
     @BindView(com.example.tracee2.R.id.findRestaurantsButton) Button mFindRestaurantsButton;
     @BindView(com.example.tracee2.R.id.locationEditText) EditText mLocationEditText;
 
+
     public static final String TAG = MainActivity.class.getSimpleName();
 
     @Override
