@@ -14,6 +14,7 @@ This a demo of the Application!
 ![screenshot](login.jpg)
 ![screenshot](dashboard.jpg)
 ![screenshot](result.jpg)
+![screenshot](details.jpg)
 
 ## Contributors
 So far there are no contributors for this project.
