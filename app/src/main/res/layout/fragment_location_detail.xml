@@ -13,7 +13,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            android:id="@+id/restaurantImageView"
+            android:id="@+id/locationImageView"
             android:src="@drawable/hiking"
             android:scaleType="centerCrop" />
 
@@ -27,7 +27,7 @@
             android:paddingBottom="20dp">
 
             <TextView
-                android:id="@+id/restaurantNameTextView"
+                android:id="@+id/locationNameTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
@@ -41,7 +41,7 @@
                 android:id="@+id/ratingTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/restaurantNameTextView"
+                android:layout_alignTop="@+id/locationNameTextView"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:text="4.5/5"
@@ -52,7 +52,7 @@
                 android:id="@+id/cuisineTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/restaurantNameTextView"
+                android:layout_below="@+id/locationNameTextView"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:text="Brunch, American"
@@ -67,7 +67,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/saveRestaurantButton"
+                android:layout_above="@+id/savelocationButton"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
@@ -118,12 +118,12 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/saveRestaurantButton"
+                android:id="@+id/savelocationButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:background="#018786"
-                android:text="Save Restaurant"
+                android:text="Save Trail"
                 android:textColor="#fff"
                 android:textSize="15sp" />
         </RelativeLayout>

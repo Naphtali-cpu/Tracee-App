@@ -89,10 +89,10 @@
                 android:textSize="24sp" />
 
             <HorizontalScrollView
-                android:id="@+id/cardview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
+                android:id="@+id/restaurantImageView2"
                 android:scrollbars="none">
 
                 <LinearLayout

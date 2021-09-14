@@ -1,19 +1,14 @@
 package com.example.tracee2.ui;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.tracee2.R;
 import com.example.tracee2.adapters.LocationListAdapter;
@@ -24,7 +19,15 @@ import com.example.tracee2.network.YelpClient;
 
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
 public class LocationActivity extends AppCompatActivity {
+//    private SharedPreferences mSharedPreferences;
+//    private String mRecentAddress;
     private static final String TAG = LocationActivity.class.getSimpleName();
 
     @BindView(R.id.recyclerView) RecyclerView mRecyclerView;
@@ -42,31 +45,35 @@ public class LocationActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         Intent intent = getIntent();
+
+//        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+//        mRecentAddress = mSharedPreferences.getString(Constants.PREFERENCES_LOCATION_KEY, null);
+
         String location = intent.getStringExtra("location");
 
         YelpApi client = YelpClient.getClient();
-
         Call<YelpBusinessesSearchResponse> call = client.getRestaurants(location, "trails");
 
         call.enqueue(new Callback<YelpBusinessesSearchResponse>() {
             @Override
             public void onResponse(Call<YelpBusinessesSearchResponse> call, Response<YelpBusinessesSearchResponse> response) {
+
                 hideProgressBar();
 
                 if (response.isSuccessful()) {
                     restaurants = response.body().getBusinesses();
                     mAdapter = new LocationListAdapter(LocationActivity.this, restaurants);
                     mRecyclerView.setAdapter(mAdapter);
-                    RecyclerView.LayoutManager layoutManager =
-                            new LinearLayoutManager(LocationActivity.this);
+                    RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(LocationActivity.this);
                     mRecyclerView.setLayoutManager(layoutManager);
                     mRecyclerView.setHasFixedSize(true);
 
-                    showRestaurants();
+                    showLocation();
                 } else {
                     showUnsuccessfulMessage();
                 }
             }
+
 
             @Override
             public void onFailure(Call<YelpBusinessesSearchResponse> call, Throwable t) {
@@ -75,7 +82,9 @@ public class LocationActivity extends AppCompatActivity {
             }
 
         });
+
     }
+
     private void showFailureMessage() {
         mErrorTextView.setText("Something went wrong. Please check your Internet connection and try again later");
         mErrorTextView.setVisibility(View.VISIBLE);
@@ -86,7 +95,7 @@ public class LocationActivity extends AppCompatActivity {
         mErrorTextView.setVisibility(View.VISIBLE);
     }
 
-    private void showRestaurants() {
+    private void showLocation() {
         mRecyclerView.setVisibility(View.VISIBLE);
     }
 

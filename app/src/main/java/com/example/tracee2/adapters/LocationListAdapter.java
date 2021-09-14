@@ -22,58 +22,59 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class LocationListAdapter extends RecyclerView.Adapter<LocationListAdapter.RestaurantViewHolder> {
-    private List<Business> mRestaurants;
+
+public class LocationListAdapter extends RecyclerView.Adapter<LocationListAdapter.LocationViewHolder> {
+    private List<Business> mLocation;
     private Context mContext;
 
-    public LocationListAdapter(Context context, List<Business> restaurants) {
+    public LocationListAdapter(Context context, List<Business> location) {
         mContext = context;
-        mRestaurants = restaurants;
+        mLocation = location;
     }
 
     @Override
-    public LocationListAdapter.RestaurantViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public LocationViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.restaurant_list_item, parent, false);
-        RestaurantViewHolder viewHolder = new RestaurantViewHolder(view);
+        LocationViewHolder viewHolder = new LocationViewHolder(view);
         return viewHolder;
     }
 
     @Override
-    public void onBindViewHolder(LocationListAdapter.RestaurantViewHolder holder, int position) {
-        holder.bindRestaurant(mRestaurants.get(position));
+    public void onBindViewHolder(LocationViewHolder holder, int position) {
+        holder.bindRestaurant(mLocation.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return mRestaurants.size();
+        return mLocation.size();
     }
 
-    public class RestaurantViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        @BindView(R.id.restaurantImageView) ImageView mRestaurantImageView;
-        @BindView(R.id.restaurantNameTextView) TextView mNameTextView;
+    public class LocationViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        @BindView(R.id.locationImageView) ImageView mLocationImageView;
+        @BindView(R.id.locationNameTextView) TextView mNameTextView;
         @BindView(R.id.categoryTextView) TextView mCategoryTextView;
         @BindView(R.id.ratingTextView) TextView mRatingTextView;
         private Context mContext;
 
-        public RestaurantViewHolder(View itemView) {
+        public LocationViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
             mContext = itemView.getContext();
             itemView.setOnClickListener(this);
         }
 
-        public void bindRestaurant(Business restaurant) {
-            mNameTextView.setText(restaurant.getName());
-            mCategoryTextView.setText(restaurant.getCategories().get(0).getTitle());
-            mRatingTextView.setText("Rating: " + restaurant.getRating() + "/5");
-            Picasso.get().load(restaurant.getImageUrl()).into(mRestaurantImageView);
+        public void bindRestaurant(Business trails) {
+            mNameTextView.setText(trails.getName());
+            mCategoryTextView.setText(trails.getCategories().get(0).getTitle());
+            mRatingTextView.setText("Rating: " + trails.getRating() + "/5");
+            Picasso.get().load(trails.getImageUrl()).into(mLocationImageView);
         }
         @Override
         public void onClick(View v) {
             int itemPosition = getLayoutPosition();
             Intent intent = new Intent(mContext, LocationDetailActivity.class);
             intent.putExtra("position", itemPosition);
-            intent.putExtra("restaurants", Parcels.wrap(mRestaurants));
+            intent.putExtra("location", Parcels.wrap(mLocation));
             mContext.startActivity(intent);
         }
     }
