@@ -50,7 +50,6 @@ public class LocationActivity extends AppCompatActivity {
 //        mRecentAddress = mSharedPreferences.getString(Constants.PREFERENCES_LOCATION_KEY, null);
 
         String location = intent.getStringExtra("location");
-
         YelpApi client = YelpClient.getClient();
         Call<YelpBusinessesSearchResponse> call = client.getRestaurants(location, "trails");
 
