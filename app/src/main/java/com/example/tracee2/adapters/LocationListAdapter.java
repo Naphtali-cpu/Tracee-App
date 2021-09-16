@@ -69,6 +69,7 @@ public class LocationListAdapter extends RecyclerView.Adapter<LocationListAdapte
             mRatingTextView.setText("Rating: " + trails.getRating() + "/5");
             Picasso.get().load(trails.getImageUrl()).into(mLocationImageView);
         }
+
         @Override
         public void onClick(View v) {
             int itemPosition = getLayoutPosition();
