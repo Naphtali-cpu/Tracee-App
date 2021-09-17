@@ -3,7 +3,9 @@ package com.example.tracee2.ui;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,45 +13,30 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 
+import com.example.tracee2.Constants;
 import com.example.tracee2.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 import butterknife.*;
 import butterknife.ButterKnife;
 
-public class Dashboard extends AppCompatActivity {
-
+public class Dashboard extends AppCompatActivity implements View.OnClickListener{
     Button btnLogOut;
     Button mbottomNavigationView;
     FirebaseAuth mAuth;
-    @BindView(com.example.tracee2.R.id.findRestaurantsButton) Button mFindRestaurantsButton;
-    @BindView(com.example.tracee2.R.id.locationEditText) EditText mLocationEditText;
-
-
-    public static final String TAG = MainActivity.class.getSimpleName();
+    @BindView(R.id.savedRestaurantsButton) Button mSavedRestaurantsButton;
+    @BindView(R.id.findRestaurantsButton) Button mFindRestaurantsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        setContentView(com.example.tracee2.R.layout.activity_dashboard);
+        setContentView(R.layout.activity_dashboard);
         ButterKnife.bind(this);
-
-
-        mFindRestaurantsButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                String location = mLocationEditText.getText().toString();
-                Intent intent = new Intent(Dashboard.this, LocationActivity.class);
-                intent.putExtra("location", location);
-                startActivity(intent);
-                Toast.makeText(Dashboard.this, location, Toast.LENGTH_LONG).show();
-
-            }
-        });
-
-//        Loading images with picasso
 
         ImageView imageView = findViewById(R.id.imageview);
         ImageView imageView2 = findViewById(R.id.imageview2);
@@ -83,8 +70,6 @@ public class Dashboard extends AppCompatActivity {
         Picasso.get().load(url9).placeholder(R.drawable.ic_launcher_foreground).into(imageView9);
         Picasso.get().load(url10).placeholder(R.drawable.ic_launcher_foreground).into(imageView10);
 
-//        Logout user
-
         btnLogOut = findViewById(R.id.btnLogout);
         mAuth = FirebaseAuth.getInstance();
         btnLogOut.setOnClickListener(view ->{
@@ -92,14 +77,20 @@ public class Dashboard extends AppCompatActivity {
             startActivity(new Intent(Dashboard.this, LoginActivity.class));
         });
 
+        mFindRestaurantsButton.setOnClickListener(this);
+        mSavedRestaurantsButton.setOnClickListener(this);
     }
 
     @Override
-    protected void onStart() {
-        super.onStart();
-        FirebaseUser user = mAuth.getCurrentUser();
-        if (user == null){
-            startActivity(new Intent(Dashboard.this, LoginActivity.class));
+    public void onClick(View v){
+        if (v == mFindRestaurantsButton) {
+            Intent intent = new Intent(Dashboard.this, LocationActivity.class);
+            startActivity(intent);
+        }
+        if (v == mSavedRestaurantsButton) {
+            Intent intent = new Intent(Dashboard.this, SavedLocationListActivity.class);
+            startActivity(intent);
         }
     }
+
 }
