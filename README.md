@@ -9,7 +9,7 @@ This is an application that allows users to search for places to go have fun, ta
 ## Demo
 This a demo of the Application!  
 
-<img src="splash.jpg" width="600" height="490">
+<img src="splash.jpg" width="500" height="500">
 ![screenshot](register.jpg)
 ![screenshot](login.jpg)
 ![screenshot](dashboard.jpg)
