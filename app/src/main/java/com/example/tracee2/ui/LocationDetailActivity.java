@@ -29,13 +29,11 @@ public class LocationDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_location_detail);
         ButterKnife.bind(this);
 
-        mLocation = Parcels.unwrap(getIntent().getParcelableExtra("location"));
+        mLocation = Parcels.unwrap(getIntent().getParcelableExtra("restaurants"));
         int startingPosition = getIntent().getIntExtra("position", 0);
 
         adapterViewPager = new LocationPagerAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT, mLocation);
         mViewPager.setAdapter(adapterViewPager);
         mViewPager.setCurrentItem(startingPosition);
     }
-
-
 }

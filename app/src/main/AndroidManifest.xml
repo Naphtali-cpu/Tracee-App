@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tracee2">
         <activity
+            android:name=".ui.Cycling"
+            android:exported="true" />
+        <activity
+            android:name=".ui.Hiking"
+            android:exported="true" />
+        <activity
             android:name=".ui.SavedLocationListActivity"
             android:exported="true" />
         <activity

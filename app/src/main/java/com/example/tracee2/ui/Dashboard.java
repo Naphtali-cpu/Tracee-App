@@ -30,6 +30,12 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
     FirebaseAuth mAuth;
     @BindView(R.id.savedRestaurantsButton) Button mSavedRestaurantsButton;
     @BindView(R.id.findRestaurantsButton) Button mFindRestaurantsButton;
+//    @BindView(R.id.hiking) Button mHiking;
+//    @BindView(R.id.cycling) Button mCycling;
+//    @BindView(R.id.imageview3) Button mCamping;
+//    @BindView(R.id.imageview4) Button mSwimming;
+//    @BindView(R.id.imageview5) Button mTravel;
+//    @BindView(R.id.imageview6) Button mWildTour;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,6 +97,14 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
             Intent intent = new Intent(Dashboard.this, SavedLocationListActivity.class);
             startActivity(intent);
         }
+//        if (v == mHiking) {
+//            Intent intent = new Intent(Dashboard.this, Hiking.class);
+//            startActivity(intent);
+//        }
+//        if (v == mCycling) {
+//            Intent intent = new Intent(Dashboard.this, Cycling.class);
+//            startActivity(intent);
+//        }
     }
 
 }

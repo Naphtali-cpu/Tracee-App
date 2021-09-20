@@ -25,15 +25,15 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class SavedLocationListActivity extends AppCompatActivity {
-    private DatabaseReference mRestaurantReference;
+    private DatabaseReference mLocationReference;
     private FirebaseRecyclerAdapter<Business, FirebaseLocationViewHolder> mFirebaseAdapter;
 
     @BindView(R.id.recyclerView)
     RecyclerView mRecyclerView;
     @BindView(R.id.errorTextView)
     TextView mErrorTextView;
-//    @BindView(R.id.progressBar)
-//    ProgressBar mProgressBar;
+    @BindView(R.id.progressBar)
+    ProgressBar mProgressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +41,7 @@ public class SavedLocationListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_location);
         ButterKnife.bind(this);
 
-        mRestaurantReference = FirebaseDatabase.getInstance().getReference(Constants.FIREBASE_CHILD_RESTAURANTS);
+        mLocationReference = FirebaseDatabase.getInstance().getReference(Constants.FIREBASE_CHILD_RESTAURANTS);
         setUpFirebaseAdapter();
 //        hideProgressBar();
         showRestaurants();
@@ -50,7 +50,7 @@ public class SavedLocationListActivity extends AppCompatActivity {
     private void setUpFirebaseAdapter(){
         FirebaseRecyclerOptions<Business> options =
                 new FirebaseRecyclerOptions.Builder<Business>()
-                        .setQuery(mRestaurantReference, Business.class)
+                        .setQuery(mLocationReference, Business.class)
                         .build();
 
         mFirebaseAdapter = new FirebaseRecyclerAdapter<Business, FirebaseLocationViewHolder>(options) {
@@ -89,7 +89,7 @@ public class SavedLocationListActivity extends AppCompatActivity {
         mRecyclerView.setVisibility(View.VISIBLE);
     }
 
-//    private void hideProgressBar() {
-//        mProgressBar.setVisibility(View.GONE);
-//    }
+    private void hideProgressBar() {
+        mProgressBar.setVisibility(View.GONE);
+    }
 }

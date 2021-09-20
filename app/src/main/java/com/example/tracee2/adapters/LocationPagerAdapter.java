@@ -11,11 +11,12 @@ import com.example.tracee2.ui.LocationDetailFragment;
 import java.util.List;
 
 public class LocationPagerAdapter extends FragmentPagerAdapter {
+
     private List<Business> mLocation;
 
-    public LocationPagerAdapter(@NonNull FragmentManager fm, int behavior, List<Business> location) {
+    public LocationPagerAdapter(@NonNull FragmentManager fm, int behavior, List<Business> restaurants) {
         super(fm, behavior);
-        mLocation = location;
+        mLocation = restaurants;
     }
 
     @Override
