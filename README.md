@@ -10,11 +10,11 @@ This is an application that allows users to search for places to go have fun, ta
 This a demo of the Application!  
 
 <img src="splash.jpg" width="350" height="750">
-![screenshot](register.jpg)
-![screenshot](login.jpg)
-![screenshot](dashboard.jpg)
-![screenshot](result.jpg)
-![screenshot](details.jpg)
+<img src="register.jpg" width="350" height="750">
+<img src="login.jpg" width="350" height="750">
+<img src="dashboard.jpg" width="350" height="750">
+<img src="result.jpg" width="350" height="750">
+<img src="details.jpg" width="350" height="750">
 
 ## Contributors
 So far there are no contributors for this project.
