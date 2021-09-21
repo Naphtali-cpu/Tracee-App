@@ -30,13 +30,13 @@ public class Profile extends AppCompatActivity {
                     case R.id.home:
                         startActivity(new Intent(getApplicationContext()
                                 ,Dashboard.class));
-                        overridePendingTransition(0,0);
+                        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                         return true;
 
                     case R.id.places:
                         startActivity(new Intent(getApplicationContext()
                                 ,Places.class));
-                        overridePendingTransition(0,0);
+                        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                         return true;
                 }
                 return false;

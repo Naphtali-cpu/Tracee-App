@@ -16,6 +16,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
     TextInputEditText etLoginEmail;
@@ -35,6 +36,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(view -> {
             loginUser();
         });
+
         tvRegisterHere.setOnClickListener(view ->{
             startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
         });
@@ -42,19 +44,31 @@ public class LoginActivity extends AppCompatActivity {
     private void loginUser(){
         String email = etLoginEmail.getText().toString();
         String password = etLoginPassword.getText().toString();
+
         if (TextUtils.isEmpty(email)){
             etLoginEmail.setError("Email cannot be empty");
             etLoginEmail.requestFocus();
+
         }else if (TextUtils.isEmpty(password)){
             etLoginPassword.setError("Password cannot be empty");
             etLoginPassword.requestFocus();
+
         }else{
             mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
-                        Toast.makeText(LoginActivity.this, "Welcome! ", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(LoginActivity.this, Dashboard.class));
+                        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+                        if(user.isEmailVerified()) {
+                            Toast.makeText(LoginActivity.this, "Welcome! ", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(LoginActivity.this, Dashboard.class));
+                        }else {
+                            user.sendEmailVerification();
+                            Toast.makeText(LoginActivity.this, "Check your Email to verify your account", Toast.LENGTH_LONG).show();
+                        }
+
+
                     }else{
                         Toast.makeText(LoginActivity.this, "Log in Error: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }

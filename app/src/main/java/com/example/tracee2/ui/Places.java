@@ -28,12 +28,12 @@ public class Places extends AppCompatActivity {
                     case R.id.profile:
                         startActivity(new Intent(getApplicationContext()
                                 ,Profile.class));
-                        overridePendingTransition(0,0);
+                        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                         return true;
                     case R.id.home:
                         startActivity(new Intent(getApplicationContext()
                                 ,Dashboard.class));
-                        overridePendingTransition(0,0);
+                        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                         return true;
 
                     case R.id.places:

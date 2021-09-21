@@ -53,7 +53,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
                     case R.id.profile:
                         startActivity(new Intent(getApplicationContext()
                                 ,Profile.class));
-                        overridePendingTransition(0,0);
+                        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                         return true;
                     case R.id.home:
                         return true;
@@ -61,7 +61,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
                     case R.id.places:
                         startActivity(new Intent(getApplicationContext()
                                 ,Places.class));
-                        overridePendingTransition(0,0);
+                        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                         return true;
                 }
                 return false;
