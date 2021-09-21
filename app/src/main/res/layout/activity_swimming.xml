@@ -37,7 +37,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/nunito_bold"
-        android:text="Cycling "
+        android:text="Swimming "
         android:textColor="#333333"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -92,13 +92,13 @@
         android:fontFamily="@font/nunito_bold"
         android:lineSpacingExtra="2dp"
         android:text="
-Cycling, also called bicycling or biking, is the use of bicycles for transport, recreation, exercise or sport. ... They are the principal means of transportation in many parts of the world. Cycling is widely regarded as an effective and efficient mode of transportation optimal for short to moderate distances."        android:textSize="16sp"
+Swimming, in recreation and sports, the propulsion of the body through water by combined arm and leg motions and the natural flotation of the body. Swimming as an exercise is popular as an all-around body developer and is particularly useful in therapy and as exercise for physically handicapped persons."        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/price"
         app:layout_constraintTop_toBottomOf="@+id/price" />
 
 <!--    <Button-->
-<!--        android:id="@+id/button2"-->
+<!--        android:id="@+id/button"-->
 <!--        android:layout_width="0dp"-->
 <!--        android:layout_height="wrap_content"-->
 <!--        android:layout_marginStart="16dp"-->

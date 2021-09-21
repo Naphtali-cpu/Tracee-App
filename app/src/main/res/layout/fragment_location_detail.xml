@@ -1,14 +1,14 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.LocationDetailFragment">
+    tools:context=".ui.LocationDetailFragment"
+    android:background="#d8e2dc">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#1d3557">
+        android:layout_height="match_parent">
 
         <ImageView
             android:layout_width="match_parent"
@@ -62,12 +62,11 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="377dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/savelocationButton"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
@@ -85,8 +84,8 @@
                     android:drawablePadding="4dp"
                     android:gravity="center"
                     android:text="View on Origin Site "
-                    android:textColor="#fff"
-                    android:textSize="15sp"
+                    android:textColor="#018786"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -98,8 +97,8 @@
                     android:drawablePadding="4dp"
                     android:gravity="center"
                     android:text="+247 727 99 1993"
-                    android:textColor="#fff"
-                    android:textSize="15sp"
+                    android:textColor="#018786"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -111,21 +110,23 @@
                     android:drawablePadding="4dp"
                     android:gravity="center_vertical"
                     android:text="123 SW Best Ever Ave. Portland, Oregon, 97222"
-                    android:textColor="#fff"
-                    android:textSize="15sp"
+                    android:textColor="#018786"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
-
-            <Button
-                android:id="@+id/saveRestaurantButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:background="#018786"
-                android:text="Save Trail"
-                android:textColor="#fff"
-                android:textSize="15sp" />
         </RelativeLayout>
+        <Button
+            android:id="@+id/saveRestaurantButton"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/add_to_cart_bg"
+            android:text="Save Trail"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
     </LinearLayout>
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

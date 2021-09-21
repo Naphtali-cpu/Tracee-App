@@ -12,11 +12,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tracee2">
         <activity
-            android:name=".ui.Cycling"
+            android:name=".ui.Places"
             android:exported="true" />
         <activity
-            android:name=".ui.Hiking"
+            android:name=".ui.Profile"
             android:exported="true" />
+
+        <activity
+            android:name=".ui.Wild"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ui.Travel"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ui.Swimming"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ui.Camping"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ui.Cycling"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ui.Hiking"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".ui.SavedLocationListActivity"
             android:exported="true" />
@@ -28,7 +53,8 @@
             android:exported="true" />
         <activity
             android:name=".ui.LocationActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar" />
         <activity
             android:name=".ui.LocationDetailActivity"
             android:exported="true" />
@@ -37,7 +63,8 @@
             android:exported="true" />
         <activity
             android:name=".ui.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

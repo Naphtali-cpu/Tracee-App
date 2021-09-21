@@ -10,16 +10,16 @@ import android.widget.ImageView;
 import com.example.tracee2.R;
 import com.squareup.picasso.Picasso;
 
-public class Cycling extends AppCompatActivity {
+public class Swimming extends AppCompatActivity {
     private ImageView mHiking;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cycling);
+        setContentView(R.layout.activity_swimming);
 
         ImageView imageView = findViewById(R.id.imageView5);
-        String url = "https://images.pexels.com/photos/287398/pexels-photo-287398.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260";
+        String url = "https://images.pexels.com/photos/7294223/pexels-photo-7294223.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260";
         Picasso.get().load(url).placeholder(R.drawable.ic_launcher_foreground).into(imageView);
 
         mHiking = (ImageView) findViewById(R.id.imageView2);
@@ -27,7 +27,7 @@ public class Cycling extends AppCompatActivity {
         mHiking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Cycling.this, Dashboard.class);
+                Intent intent = new Intent(Swimming.this, Dashboard.class);
                 startActivity(intent);
             }
 
