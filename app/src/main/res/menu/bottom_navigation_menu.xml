@@ -8,7 +8,7 @@
         android:id="@+id/places"
         android:enabled="true"
         android:icon="@drawable/places"
-        android:title="Places"/>
+        android:title="Add Post"/>
     <item
         android:id="@+id/profile"
         android:enabled="true"

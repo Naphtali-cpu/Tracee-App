@@ -3,6 +3,8 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' }  // Animasi Slide Left Right
+
     }
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.1"
