@@ -26,6 +26,7 @@ So far there are no contributors for this project.
 If you wish to, contact me :)
 
 ## Future Implementation
+* Add API on Hiking, Cycling, Travel, Wild Tour and Camping activities.
 
 
 ## Architecture
