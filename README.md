@@ -27,6 +27,9 @@ If you wish to, contact me :)
 
 ## Architecture
 #### Resource https://developer.android.com/jetpack/guide
+### Meaning of Architecture
+
+In information systems, applications architecture or application architecture is one of several architecture domains that form the pillars of an enterprise architecture. An applications architecture describes the behavior of applications used in a business, focused on how they interact with each other and with users.
 
 ![http://fernandocejas.com/2015/07/18/architecting-android-the-evolution/](https://github.com/android10/Sample-Data/blob/master/Android-CleanArchitecture/clean_architecture.png)
 
