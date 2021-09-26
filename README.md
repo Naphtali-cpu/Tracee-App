@@ -28,6 +28,8 @@ If you wish to, contact me :)
 ## Architecture
 #### Resource https://developer.android.com/jetpack/guide
 
+![http://fernandocejas.com/2015/07/18/architecting-android-the-evolution/](https://github.com/android10/Sample-Data/blob/master/Android-CleanArchitecture/clean_architecture.png)
+
 ## Bugs
 * API only fetchs data around USA.
 
