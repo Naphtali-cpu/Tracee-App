@@ -44,6 +44,7 @@ If you wish to, contact me :)
 
 ## Technologies Used
 * Java
+* Android
 
 
 ## Contact Information
