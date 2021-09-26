@@ -7,14 +7,12 @@ Naphtali Makori
 This is an application that allows users to search for places to go have fun, take a walk or anything that satisfies them since it is hard to find places or trails to go to and be satisfied.
 
 ## Demo
-This a demo of the Application!  
 
-<img src="splash.jpg" width="350" height="750">
-<img src="register.jpg" width="350" height="750">
-<img src="login.jpg" width="350" height="750">
-<img src="dashboard.jpg" width="350" height="750">
-<img src="result.jpg" width="350" height="750">
-<img src="details.jpg" width="350" height="750">
+<img src="splash.jpg" width="250" height="550">     <img src="register.jpg" width="250" height="550">
+
+<img src="login.jpg" width="250" height="550">      <img src="dashboard.jpg" width="250" height="550">
+
+<img src="result.jpg" width="250" height="550">     <img src="details.jpg" width="250" height="550">
 
 ## Contributors
 So far there are no contributors for this project.
