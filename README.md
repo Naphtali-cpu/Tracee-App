@@ -26,6 +26,7 @@ So far there are no contributors for this project.
 If you wish to, contact me :)
 
 ## Architecture
+#### Resource https://developer.android.com/jetpack/guide
 
 ## Bugs
 * API only fetchs data around USA.
