@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -13,6 +14,9 @@ import com.squareup.picasso.Picasso;
 
 public class Hiking extends AppCompatActivity {
     private ImageView mHiking;
+    private SharedPreferences mSharedPreferences;
+    private SharedPreferences.Editor mEditor;
+    private String mRecentAddress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

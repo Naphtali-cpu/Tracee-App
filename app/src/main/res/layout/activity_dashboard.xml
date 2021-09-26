@@ -8,6 +8,7 @@
     android:background="#d8e2dc"
     android:orientation="horizontal">
 
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -17,15 +18,14 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-
             <Button
-                android:id="@+id/btnLogout"
-                android:layout_width="wrap_content"
+                android:id="@+id/findRestaurantsButton"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="300dp"
+                android:layout_marginLeft="200dp"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/add_to_cart_bg"
-                android:text="Logout"
+                android:text="Search Location"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -55,26 +55,26 @@
                 android:textColor="#555555"
                 android:textSize="24sp" />
 
-            <EditText
-                android:id="@+id/locationEditText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/heading_label"
-                android:layout_alignStart="@+id/heading_label"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="20dp"
-                android:background="@drawable/search_layout"
-                android:ems="13"
-                android:fontFamily="@font/nunito_semibold"
-                android:hint="Search here"
-                android:inputType="textPersonName"
-                android:paddingLeft="20dp"
-                android:paddingTop="10dp"
-                android:paddingRight="20dp"
-                android:paddingBottom="10dp"
-                android:textColor="#000"
-                android:textSize="16sp" />
+<!--            <EditText-->
+<!--                android:id="@+id/locationEditText"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/heading_label"-->
+<!--                android:layout_alignStart="@+id/heading_label"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:background="@drawable/search_layout"-->
+<!--                android:ems="13"-->
+<!--                android:fontFamily="@font/nunito_semibold"-->
+<!--                android:hint="Search here"-->
+<!--                android:inputType="textPersonName"-->
+<!--                android:paddingLeft="20dp"-->
+<!--                android:paddingTop="10dp"-->
+<!--                android:paddingRight="20dp"-->
+<!--                android:paddingBottom="10dp"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="16sp" />-->
 
             <TextView
                 android:id="@+id/heading_label2"
@@ -497,8 +497,19 @@
                 android:text="Gallery "
                 android:textColor="#555555"
                 android:textSize="24sp" />
+            <FrameLayout
+                android:id="@+id/main_container"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/main_toolbar">
+
+            </FrameLayout>
 
         </LinearLayout>
+
 
 
     </ScrollView>

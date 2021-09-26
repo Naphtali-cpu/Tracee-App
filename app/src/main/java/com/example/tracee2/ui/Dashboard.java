@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -28,11 +29,11 @@ import butterknife.ButterKnife;
 
 public class Dashboard extends AppCompatActivity implements View.OnClickListener{
     private CardView mHiking, mCycling, mCamping, mSwimming, mTravel, mWild;
-
     public ImageView card1;
-    Button btnLogOut;
     Button mbottomNavigationView;
     FirebaseAuth mAuth;
+
+
     @BindView(R.id.savedRestaurantsButton) Button mSavedRestaurantsButton;
     @BindView(R.id.findRestaurantsButton) Button mFindRestaurantsButton;
 
@@ -53,7 +54,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
                     case R.id.profile:
                         startActivity(new Intent(getApplicationContext()
                                 ,Profile.class));
-                        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+                        overridePendingTransition(0, 0);
                         return true;
                     case R.id.home:
                         return true;
@@ -61,14 +62,16 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
                     case R.id.places:
                         startActivity(new Intent(getApplicationContext()
                                 ,Places.class));
-                        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+                        overridePendingTransition(0, 0);
                         return true;
                 }
                 return false;
             }
+
         });
 
         ButterKnife.bind(this);
+
 
         ImageView imageView = findViewById(R.id.imageview);
         ImageView imageView2 = findViewById(R.id.imageview2);
@@ -115,6 +118,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
             public void onClick(View v) {
                 Intent intent = new Intent(Dashboard.this, Hiking.class);
                 startActivity(intent);
+                overridePendingTransition(0, R.anim.zoom);
             }
 
         });
@@ -123,6 +127,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
             public void onClick(View v) {
                 Intent intent = new Intent(Dashboard.this, Camping.class);
                 startActivity(intent);
+                overridePendingTransition(0, R.anim.zoom);
             }
 
         });
@@ -131,6 +136,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
             public void onClick(View v) {
                 Intent intent = new Intent(Dashboard.this, Swimming.class);
                 startActivity(intent);
+                overridePendingTransition(0, R.anim.zoom);
             }
 
         });
@@ -139,6 +145,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
             public void onClick(View v) {
                 Intent intent = new Intent(Dashboard.this, Travel.class);
                 startActivity(intent);
+                overridePendingTransition(0, R.anim.zoom);
             }
 
         });
@@ -148,6 +155,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
             public void onClick(View view) {
                 Intent intent = new Intent(Dashboard.this, Cycling.class);
                 startActivity(intent);
+                overridePendingTransition(0, R.anim.zoom);
             }
         });
         mWild.setOnClickListener(new View.OnClickListener() {
@@ -155,18 +163,15 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
             public void onClick(View view) {
                 Intent intent = new Intent(Dashboard.this, Wild.class);
                 startActivity(intent);
+                overridePendingTransition(0, R.anim.zoom);
             }
         });
 
-        btnLogOut = findViewById(R.id.btnLogout);
-        mAuth = FirebaseAuth.getInstance();
-        btnLogOut.setOnClickListener(view ->{
-            mAuth.signOut();
-            startActivity(new Intent(Dashboard.this, LoginActivity.class));
-        });
 
         mFindRestaurantsButton.setOnClickListener(this);
         mSavedRestaurantsButton.setOnClickListener(this);
+
+
     }
 
     @Override
@@ -175,6 +180,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
         if (v == mFindRestaurantsButton) {
             Intent intent = new Intent(Dashboard.this, LocationActivity.class);
             startActivity(intent);
+
         }
         if (v == mSavedRestaurantsButton) {
             Intent intent = new Intent(Dashboard.this, SavedLocationListActivity.class);
