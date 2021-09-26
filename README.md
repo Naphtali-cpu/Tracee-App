@@ -8,27 +8,16 @@ This is an application that allows users to search for places to go have fun, ta
 
 ## Demo
 This a demo of the Application!
-<img src="splash.png" width="250"/>
 
-<img src="register.png" width="250"/> <img src="assets/img3.png" width="250"/> <img src="assets/img4.png" width="250"/>
+<img src="splash.jpg" width="250" height="750"><img src="register.jpg" width="250" height="750">
 
-<img src="login.png" width="250"/> <img src="assets/img6.png" width="250"/> <img src="assets/img7.png" width="250"/>
+<img src="login.jpg" width="250" height="750">
 
-<img src="dashboard.png" width="250"/>
+<img src="dashboard.jpg" width="250" height="750">
 
-<img src="assets/img9.png" width="250"/> <img src="assets/img10.png" width="250"/> <img src="assets/img11.png" width="250"/> <img src="assets/img12.png" width="250"/> <img src="assets/img13.png" width="250"/>
+<img src="result.jpg" width="250" height="750">
 
-[comment]: <> (<img src="splash.jpg" width="350" height="750">)
-
-[comment]: <> (<img src="register.jpg" width="350" height="750">)
-
-[comment]: <> (<img src="login.jpg" width="350" height="750">)
-
-[comment]: <> (<img src="dashboard.jpg" width="350" height="750">)
-
-[comment]: <> (<img src="result.jpg" width="350" height="750">)
-
-[comment]: <> (<img src="details.jpg" width="350" height="750">)
+<img src="details.jpg" width="250" height="750">
 
 ## Contributors
 So far there are no contributors for this project.
