@@ -14,6 +14,13 @@ This is an application that allows users to search for places to go have fun, ta
 
 <img src="result.jpg" width="250" height="550">     <img src="details.jpg" width="250" height="550">
 
+## Installation Guide
+* Ensure Git is installed.
+* Clone the repo link or download the ZIP.
+* Open terminal clone the project to any directory on the machine.
+* Enter android studio and make sure gradle finishes to build.
+* Run the application on the emulator/USB.
+
 ## Contributors
 So far there are no contributors for this project.
 If you wish to, contact me :)
