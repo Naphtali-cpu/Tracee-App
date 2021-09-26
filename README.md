@@ -25,6 +25,10 @@ This is an application that allows users to search for places to go have fun, ta
 So far there are no contributors for this project.
 If you wish to, contact me :)
 
+## Future Implementation
+* Add API on Hiking, Cycling, Travel, Wild Tour and Camping activities.
+
+
 ## Architecture
 #### Resource https://developer.android.com/jetpack/guide
 ### Meaning of Architecture
@@ -35,6 +39,7 @@ In information systems, applications architecture or application architecture is
 
 ## Bugs
 * API only fetchs data around USA.
+
 
 ## Setup and installation
 * Ensure you have Android Studio installed on your pc.
