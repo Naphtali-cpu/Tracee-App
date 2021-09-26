@@ -36,6 +36,9 @@ In information systems, applications architecture or application architecture is
 ## Bugs
 * API only fetchs data around USA.
 
+## Future Implementation
+
+
 ## Setup and installation
 * Ensure you have Android Studio installed on your pc.
 * Head to your terminal.
@@ -56,8 +59,6 @@ In information systems, applications architecture or application architecture is
 
 ## Tools used
 * Git
-
-## Future Implementation
 
 
 ## Contact Information
