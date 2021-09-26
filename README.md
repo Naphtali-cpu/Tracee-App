@@ -25,6 +25,9 @@ This is an application that allows users to search for places to go have fun, ta
 So far there are no contributors for this project.
 If you wish to, contact me :)
 
+## Future Implementation
+
+
 ## Architecture
 #### Resource https://developer.android.com/jetpack/guide
 ### Meaning of Architecture
@@ -35,8 +38,6 @@ In information systems, applications architecture or application architecture is
 
 ## Bugs
 * API only fetchs data around USA.
-
-## Future Implementation
 
 
 ## Setup and installation
