@@ -7,6 +7,7 @@ Naphtali Makori
 This is an application that allows users to search for places to go have fun, take a walk or anything that satisfies them since it is hard to find places or trails to go to and be satisfied.
 
 ## Demo
+![](https://github.com/aza0092/Cooking-Recipe-Android-App/blob/master/media/material%20design.gif)
 
 <img src="splash.jpg" width="250" height="550">     <img src="register.jpg" width="250" height="550">
 
