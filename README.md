@@ -8,11 +8,13 @@ This is an application that allows users to search for places to go have fun, ta
 
 ## Demo
 
-<img src="splash.jpg" width="250" height="550">     <img src="register.jpg" width="250" height="550">
+demo.mp4
 
-<img src="login.jpg" width="250" height="550">      <img src="dashboard.jpg" width="250" height="550">
+[comment]: <> (<img src="splash.jpg" width="250" height="550">     <img src="register.jpg" width="250" height="550">)
 
-<img src="result.jpg" width="250" height="550">     <img src="details.jpg" width="250" height="550">
+[comment]: <> (<img src="login.jpg" width="250" height="550">      <img src="dashboard.jpg" width="250" height="550">)
+
+[comment]: <> (<img src="result.jpg" width="250" height="550">     <img src="details.jpg" width="250" height="550">)
 
 ## Installation Guide
 * Ensure Git is installed.
